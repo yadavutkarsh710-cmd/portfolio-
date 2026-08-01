@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Yadav — Fashion & Graphic Design Case Study</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0A0A0A',
+                        cardbg: '#141414',
+                        accent: '#E11D48',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-darkbg text-zinc-100 antialiased selection:bg-rose-600 selection:text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/80 backdrop-blur-md border-b border-zinc-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-heading text-lg font-bold tracking-wider uppercase">UTKARSH YADAV<span class="text-rose-500">.</span></a>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="#overview" class="text-zinc-400 hover:text-white transition hidden sm:inline-block">Overview</a>
+                <a href="#merch" class="text-zinc-400 hover:text-white transition hidden sm:inline-block">Graphic Merch</a>
+                <a href="#preview" class="text-zinc-400 hover:text-white transition hidden sm:inline-block">Live Web Preview</a>
+                <a href="port.html" class="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 rounded-full transition">← Back to Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Case Study Hero -->
+    <section class="pt-36 pb-16 px-6 max-w-5xl mx-auto border-b border-zinc-800/60">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-400 mb-6">
+            <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+            Fashion Design & Graphic Merchandising Case Study
+        </div>
+        <h1 class="font-heading text-4xl sm:text-6xl font-bold tracking-tight leading-tight mb-6 text-white">
+            Fashion Hub: Apparel, Web UI & Custom Graphic Merch
+        </h1>
+        <p class="text-lg text-zinc-400 font-light leading-relaxed max-w-3xl mb-8">
+            An integrated creative showcase bridging digital user experience, apparel styling, and custom graphic design applied to streetwear t-shirts and lifestyle merchandise.
+        </p>
+
+        <!-- Project Meta Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-zinc-800/80 text-sm">
+            <div>
+                <span class="block text-zinc-500 font-mono text-xs uppercase">Client / Scope</span>
+                <span class="text-zinc-200 font-medium">Concept / Brand Identity</span>
+            </div>
+            <div>
+                <span class="block text-zinc-500 font-mono text-xs uppercase">Disciplines</span>
+                <span class="text-zinc-200 font-medium">Graphic & Fashion Design</span>
+            </div>
+            <div>
+                <span class="block text-zinc-500 font-mono text-xs uppercase">Role</span>
+                <span class="text-zinc-200 font-medium">Lead Designer & Developer</span>
+            </div>
+            <div>
+                <span class="block text-zinc-500 font-mono text-xs uppercase">Tech Stack</span>
+                <span class="text-zinc-200 font-medium">HTML5, CSS3, JS, Photoshop</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="overview" class="py-16 px-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="font-heading text-xl font-bold text-white uppercase tracking-wider">The Creative Vision</h2>
+            </div>
+            <div class="md:col-span-2 space-y-4 text-zinc-400 font-light leading-relaxed">
+                <p>
+                    Modern fashion goes beyond just fabric cut—it relies heavily on striking graphic elements, bold typography, and consistent digital presentation. 
+                </p>
+                <p>
+                    This project unites **Fashion Hub** (the digital storefront) with custom **graphic design merchandise** (t-shirts and ceramic mugs), proving how graphic design assets translate onto physical apparel and lifestyle products.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Graphic Design Merchandise Showcase (T-Shirts & Mugs) -->
+    <section id="merch" class="py-16 px-6 max-w-6xl mx-auto border-t border-zinc-800">
+        <div class="mb-12">
+            <span class="text-xs text-rose-500 uppercase tracking-widest font-mono">Graphic Design Application</span>
+            <h2 class="font-heading text-3xl font-bold text-white mt-1">Custom T-Shirt & Mug Mockups</h2>
+            <p class="text-zinc-400 text-sm mt-1">Visual graphics translated onto apparel and merchandise assets.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- T-Shirt Design Card -->
+            <div class="bg-cardbg border border-zinc-800 rounded-2xl overflow-hidden group">
+                <div class="relative aspect-[4/3] overflow-hidden bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Custom Streetwear T-Shirt Design" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-85">
+                    <div class="absolute top-4 left-4 bg-darkbg/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono border border-zinc-800 text-zinc-300">
+                        Apparel Graphic
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-heading text-xl font-semibold text-white mb-2">Urban Typography T-Shirt Series</h3>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed mb-4">
+                        Designed with high-contrast minimalist typography and geometric layouts optimized for heavy cotton streetwear apparel printing.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-2.5 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs text-zinc-400 font-mono">Vector Art</span>
+                        <span class="px-2.5 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs text-zinc-400 font-mono">Screen Printing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mug Design Card -->
+            <div class="bg-cardbg border border-zinc-800 rounded-2xl overflow-hidden group">
+                <div class="relative aspect-[4/3] overflow-hidden bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Custom Mug Design" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-85">
+                    <div class="absolute top-4 left-4 bg-darkbg/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono border border-zinc-800 text-zinc-300">
+                        Merchandise Graphic
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-heading text-xl font-semibold text-white mb-2">Minimalist Studio Ceramic Mug</h3>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed mb-4">
+                        A clean brand-identity integration featuring wrap-around graphic placement for modern studio desks and retail collections.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-2.5 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs text-zinc-400 font-mono">Branding Suite</span>
+                        <span class="px-2.5 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs text-zinc-400 font-mono">Product Mockup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Embedded Interactive Webpage Preview Section -->
+    <section id="preview" class="py-16 px-6 max-w-6xl mx-auto border-t border-zinc-800">
+        <div class="mb-8">
+            <span class="text-xs text-rose-500 uppercase tracking-widest font-mono">Frontend Development</span>
+            <h2 class="font-heading text-3xl font-bold text-white mt-1">Live Web Interface Preview</h2>
+            <p class="text-zinc-400 text-sm mt-1">The interactive Fashion Hub web layout built for this collection.</p>
+        </div>
+
+        <div class="bg-cardbg border border-zinc-800 rounded-2xl overflow-hidden shadow-2xl">
+            <!-- Browser Header Mockup -->
+            <div class="bg-zinc-900 px-4 py-3 flex items-center justify-between border-b border-zinc-800">
+                <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                </div>
+                <div class="text-xs text-zinc-400 font-mono bg-darkbg px-4 py-1 rounded-md border border-zinc-800">
+                    https://fashionhub-store.local
+                </div>
+                <div class="text-xs text-zinc-500 font-mono">Interactive View</div>
+            </div>
+
+            <!-- Inner Webpage Content -->
+            <div class="bg-[#fdfdfd] text-[#333] p-0 font-sans selection:bg-rose-500 selection:text-white">
+                <header style="background: #111; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center;">
+                    <h1 style="margin:0; font-size: 1.5rem; font-family:'Space Grotesk', sans-serif;">Fashion Hub</h1>
+                    <nav style="display: flex; gap: 20px;">
+                        <a href="#" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Home</a>
+                        <a href="#" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Collections</a>
+                        <a href="#" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 0.9rem;">Trends</a>
+                    </nav>
+                </header>
+
+                <!-- Slider Preview -->
+                <div style="position: relative; width: 100%; height: 350px; overflow: hidden; background: #000;">
+                    <img src="https://images.pexels.com/photos/5560184/pexels-photo-5560184.jpeg" alt="Banner" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 1.8rem; font-weight: bold; background: rgba(0, 0, 0, 0.6); padding: 15px 25px; border-radius: 4px; text-align: center; font-family:'Space Grotesk', sans-serif;">
+                        Discover Your Style
+                    </div>
+                </div>
+
+                <!-- Grid Collections -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 30px; background: #fdfdfd;">
+                    <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.06);">
+                        <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Summer" style="width: 100%; height: 180px; object-fit: cover;">
+                        <h3 style="padding: 12px; font-size: 1rem; text-align: center; margin:0;">Summer Collection</h3>
+                    </div>
+                    <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.06);">
+                        <img src="https://images.pexels.com/photos/5560184/pexels-photo-5560184.jpeg" alt="Streetwear" style="width: 100%; height: 180px; object-fit: cover;">
+                        <h3 style="padding: 12px; font-size: 1rem; text-align: center; margin:0;">Streetwear Line</h3>
+                    </div>
+                    <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.06);">
+                        <img src="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg" alt="Luxury" style="width: 100%; height: 180px; object-fit: cover;">
+                        <h3 style="padding: 12px; font-size: 1rem; text-align: center; margin:0;">Luxury Fashion</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Next Case Study -->
+    <footer class="border-t border-zinc-800 py-16 px-6 mt-12 bg-cardbg/50">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-xs text-zinc-500 font-mono">PORTFOLIO CASE STUDY</span>
+                <h3 class="font-heading text-xl font-bold text-white mt-1">Explore more of my design work</h3>
+            </div>
+            <a href="portfolio.html" class="px-8 py-3.5 bg-zinc-100 text-darkbg font-medium rounded-full hover:bg-white transition">Back to Main Portfolio</a>
+        </div>
+    </footer>
+
+</body>
+</html>
