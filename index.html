@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Yadav — Creative Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0A0A0A',
+                        cardbg: '#141414',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Space Grotesk & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-darkbg text-zinc-100 antialiased selection:bg-zinc-100 selection:text-darkbg">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/80 backdrop-blur-md border-b border-zinc-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-heading text-lg font-bold tracking-wider uppercase">UTKARSH YADAV<span class="text-zinc-500">.</span></a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
+                <a href="fashion-hub-case-study.html" class="hover:text-white transition">Work</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#skills" class="hover:text-white transition">Expertise</a>
+            </nav>
+
+            <a href="#contact" class="px-5 py-2.5 bg-zinc-100 text-darkbg text-sm font-medium rounded-full hover:bg-white transition">Let's Talk</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-44 pb-24 px-6 max-w-7xl mx-auto">
+        <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-400 mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Graphic & Fashion Designer
+            </div>
+            <h1 class="font-heading text-5xl sm:text-7xl font-bold tracking-tight leading-none mb-6 text-white">
+                BRIDGING VISUAL ART & FASHION DESIGN.
+            </h1>
+            <p class="text-lg text-zinc-400 mb-10 max-w-xl font-light">
+                Hi, I'm Utkarsh. I craft striking brand identities, digital layouts, and conceptual fashion pieces with a meticulous eye for detail.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="#work" class="px-8 py-4 bg-zinc-100 text-darkbg font-medium rounded-full hover:bg-white transition">Explore Portfolio</a>
+                <a href="#contact" class="px-8 py-4 border border-zinc-700 text-zinc-300 font-medium rounded-full hover:border-zinc-500 hover:text-white transition">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section with Category Filters -->
+    <section id="work" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 border-b border-zinc-800 pb-6 gap-4">
+            <div>
+                <h2 class="font-heading text-3xl font-bold tracking-wide uppercase text-white mb-2">Selected Works</h2>
+                <p class="text-sm text-zinc-400">A blend of visual graphics and apparel design projects.</p>
+            </div>
+            <!-- Filter Pills -->
+            <div class="flex flex-wrap gap-2 text-sm">
+                <button class="px-4 py-1.5 rounded-full bg-zinc-100 text-darkbg font-medium transition">All</button>
+                <button class="px-4 py-1.5 rounded-full border border-zinc-800 text-zinc-400 hover:border-zinc-600 hover:text-white transition">Graphic Design</button>
+                <button class="px-4 py-1.5 rounded-full border border-zinc-800 text-zinc-400 hover:border-zinc-600 hover:text-white transition">Fashion Design</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 (Graphic Design) -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl bg-cardbg aspect-[4/3] border border-zinc-800/80 mb-4">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Graphic Project" 
+                         class="object-cover w-full h-full group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100">
+                    <span class="absolute top-4 left-4 px-3 py-1 bg-darkbg/80 backdrop-blur-md rounded-full text-xs text-zinc-300 border border-zinc-800">Graphic Design</span>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-heading text-lg font-semibold text-white group-hover:text-zinc-300 transition">Brand Identity System</h3>
+                        <p class="text-sm text-zinc-500">Logo Suite, Typography, Guidelines</p>
+                    </div>
+                    <span class="text-xs text-zinc-500 font-mono">2026</span>
+                </div>
+            </div>
+
+            <!-- Project 2 (Fashion Design) -->
+            <div class="group cursor-pointer md:mt-16">
+                <div class="relative overflow-hidden rounded-2xl bg-cardbg aspect-[4/3] border border-zinc-800/80 mb-4">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Fashion Project" 
+                         class="object-cover w-full h-full group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100">
+                    <span class="absolute top-4 left-4 px-3 py-1 bg-darkbg/80 backdrop-blur-md rounded-full text-xs text-zinc-300 border border-zinc-800">Fashion Design</span>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-heading text-lg font-semibold text-white group-hover:text-zinc-300 transition">Apparel & Concept Collection</h3>
+                        <p class="text-sm text-zinc-500">Textiles, Moodboards, Garment Tech Packs</p>
+                    </div>
+                    <span class="text-xs text-zinc-500 font-mono">2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="py-20 px-6 max-w-7xl mx-auto border-t border-zinc-800">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="font-heading text-3xl font-bold tracking-wide uppercase text-white mb-6">About Me</h2>
+                <p class="text-zinc-400 font-light leading-relaxed mb-6">
+                    I am a creative professional combining structural aesthetics in graphic communication with the fluid, tactile world of fashion design. Whether building a complete digital visual language or conceptualizing apparel line sheets, my focus is always on sharp details and memorable style.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-sm font-mono text-zinc-300">
+                    <div class="p-4 rounded-xl bg-cardbg border border-zinc-800">✓ Brand Identity</div>
+                    <div class="p-4 rounded-xl bg-cardbg border border-zinc-800">✓ UI/UX Layouts</div>
+                    <div class="p-4 rounded-xl bg-cardbg border border-zinc-800">✓ Apparel Styling</div>
+                    <div class="p-4 rounded-xl bg-cardbg border border-zinc-800">✓ Concept Sketching</div>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl bg-cardbg aspect-[4/3] border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000&auto=format&fit=crop" 
+                     alt="Workspace" 
+                     class="object-cover w-full h-full opacity-70">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="border-t border-zinc-800 py-20 px-6 mt-12 bg-cardbg/30">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div>
+                <span class="text-xs text-zinc-500 uppercase tracking-widest font-mono">Let's Collaborate</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mt-2 mb-2">Have a project in mind?</h2>
+                <p class="text-zinc-400">Reach out for collaborations, freelance work, or creative inquiries.</p>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-3">
+                <a href="mailto:hello@utkarshyadav.design" class="text-xl font-heading font-medium text-white hover:text-zinc-300 transition underline underline-offset-8">hello@utkarshyadav.design</a>
+                <div class="flex gap-6 text-sm text-zinc-400 mt-2">
+                    <a href="#" class="hover:text-white transition">Instagram</a>
+                    <a href="yadavutkarsh710@gmail.com" class="hover:text-white transition">E-mail</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
